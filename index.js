@@ -425,7 +425,7 @@ async function enterVM(ip, name, title) {
     $('#vm-view').show();
     $('#navbar-back').show();
     $('#loading').show();
-    $('#vm-header').html(`IP: ${ip}, name: ${name}<br>${title}`);
+    $('#vm-header').html(`Click the screen to request a turn and control the computer!<br><span style="font-size:14px;">IP: ${ip}, name: ${name}<br>${title}</span><br><hr><br><br>`);
     let display = new VMDisplay();
     let voting = new VMVoting();
     let turnTime = new VMTurnTime();
